@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #141416;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Autocomplete styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #232323 inset !important;
+  background-color: #232323 !important;
+  background-clip: content-box !important;
+  -webkit-text-fill-color: white;
+  caret-color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input {
+  border-radius: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+@layer base {
+  .caption {
+    @apply text-12 font-normal tracking-normal;
+  }
+  .eyebrow {
+    @apply text-12 font-semibold uppercase tracking-wide;
+  }
+  .paragraph {
+    @apply text-14 font-normal tracking-normal;
+  }
+  .card-title {
+    @apply text-18 font-semibold tracking-normal;
+  }
+  .number-tertiary {
+    @apply text-22 font-semibold tracking-tight;
+  }
+  .page-title {
+    @apply text-28 font-semibold tracking-normal;
+  }
+  .number-secondary {
+    @apply text-28 font-semibold tracking-tight;
+  }
+  .number-headline {
+    @apply text-38 font-semibold tracking-tight;
+  }
+}
